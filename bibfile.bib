@@ -1,0 +1,37 @@
+% The big bib file.
+
+% Category: Parallel-in-time
+% Subcategory: Paradiag
+
+@article{caklovic2021parallel,
+  title={A parallel implementation of a diagonalization-based parallel-in-time integrator},
+  author={Caklovic, Gayatri and Speck, Robert and Frank, Martin},
+  journal={arXiv preprint arXiv:2103.12571},
+  year={2021},
+  note = 	 {Paradiag for time collocation methods (these
+                  produce implicit one-step Runge-Kutta methods). This
+                  involves using Paradiag to produce timestep blocks,
+                  which are further diagonalised by eigenvalue
+                  decomposition.
+		  Adaptive selection of alpha on each Picard iteration,
+		  based on trading off error between the alpha-circulant
+		  approximation of the original system (goes down for
+		  small alpha) and the round-off/truncation error in
+		  solving the alpha-circulant system (goes down for large
+		  alpha). This can be done with an increasing sequence
+		  of alpha values towards 1, they provide a formula.}
+}
+
+@article{wu2021stability,
+  title={Stability implies robust convergence of a class of diagonalization-based iterative algorithms},
+  author={Wu, Shulin and Zhou, Tao and Zhou, Zhi},
+  journal={arXiv e-prints},
+  pages={arXiv--2102 },
+  year={2021},
+  note =            {They prove that in a paradiag iteration, i.e.
+   doing a fixed point iteration approximating the all-at-once system
+   by the alpha-circulant one (for linear, constant coefficients), the
+   error reduction rate is bounded from above by alpha/(1-alpha) for
+   any stable one-step method. All comes down to some linear algebra.}
+}
+
