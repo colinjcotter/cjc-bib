@@ -1,10 +1,10 @@
 \documentclass{article}
-\bibliographystyle{elsarticle-harv}
-\usepackage{natbib}
+\usepackage[style=authoryear]{biblatex}
+\addbibresource{bibfile.bib}
 \begin{document}
 \title{Bibliography}
 \author{CJC and friends}
 \maketitle
 \nocite{*}
-\bibliography{bibfile}
+\printbibliography[keyword=paradiag, title={Paradiag}]
 \end{document}

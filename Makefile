@@ -1,4 +1,4 @@
 test:
 	pdflatex bibtest.tex
-	bibtex bibtest
+	biber bibtest
 	pdflatex bibtest.tex
